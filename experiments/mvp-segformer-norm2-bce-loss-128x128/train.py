@@ -31,7 +31,7 @@ from torch.utils.data import Dataset, DataLoader
 
 class CFG:
     LR = 3e-5
-    EPOCHS = 200
+    EPOCHS = 1000
     BATCH_SIZE = 32
     N_TRAIN = 1400 # Take first N_TRAIN images for training, rest for validation
 
