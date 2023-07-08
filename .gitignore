@@ -1,3 +1,4 @@
 kaggle-data/*
 *ckpts*
 *onnx-model*
+experiments/smp-ensemble/onnx-files/*
