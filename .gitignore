@@ -2,3 +2,8 @@ kaggle-data/*
 *ckpts*
 *onnx-model*
 experiments/smp-ensemble/onnx-files/*
+experiments/yolo/yolov8-vanilla/datasets/*
+*datasets*
+*.pt*
+*.pth*
+*.tif*
