@@ -7,3 +7,5 @@ experiments/yolo/yolov8-vanilla/datasets/*
 *.pt*
 *.pth*
 *.tif*
+experiments/mask-rcnn/mask-rcnn/train/*
+experiments/mask-rcnn/new-dataset/*
