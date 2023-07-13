@@ -20,9 +20,14 @@ def train_one_epoch(model, optimizer, data_loader, device, epoch, print_freq, sc
         warmup_factor = 1.0 / 1000
         warmup_iters = min(1000, len(data_loader) - 1)
 
-        lr_scheduler = torch.optim.lr_scheduler.LinearLR(
-            optimizer, start_factor=warmup_factor, total_iters=warmup_iters
-        )
+        # lr_scheduler = torch.optim.lr_scheduler.LinearLR(
+        #     optimizer, start_factor=warmup_factor, total_iters=warmup_iters
+        # )
+        
+        # lr_scheduler = torch.optim.lr_scheduler.LinearLR(optimizer, 
+        #                                       start_factor=0.001,
+        #                                       end_factor=1,
+        #                                       total_iters=20)
 
     for images, targets in metric_logger.log_every(data_loader, print_freq, header):
         images = list(image.to(device) for image in images)
