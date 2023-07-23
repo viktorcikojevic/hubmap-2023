@@ -1,0 +1,6 @@
+
+train: /home/viktor/Documents/kaggle/hubmap-2023/experiments/yolo/yolov8-vanilla/YOLOv8x-maskrcnn-augms-2/datasets/train/images
+val: /home/viktor/Documents/kaggle/hubmap-2023/experiments/yolo/yolov8-vanilla/YOLOv8x-maskrcnn-augms-2/datasets/val/images
+
+names:
+    0: blood_vessel
