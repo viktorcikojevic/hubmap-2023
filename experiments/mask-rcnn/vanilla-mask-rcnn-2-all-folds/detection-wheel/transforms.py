@@ -69,7 +69,7 @@ class RandomIoUCrop(nn.Module):
     def __init__(
         self,
         min_scale: float = 0.3,
-        max_scale: float = 1.0,
+        max_scale: float = 2.0,
         min_aspect_ratio: float = 0.5,
         max_aspect_ratio: float = 2.0,
         sampler_options: Optional[List[float]] = None,

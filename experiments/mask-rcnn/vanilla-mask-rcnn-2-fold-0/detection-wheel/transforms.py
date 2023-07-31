@@ -159,7 +159,7 @@ class RandomIoUCrop(nn.Module):
 
 class RandomZoomOut(nn.Module):
     def __init__(
-        self, fill: Optional[List[float]] = None, side_range: Tuple[float, float] = (1.0, 4.0), p: float = 0.5
+        self, fill: Optional[List[float]] = None, side_range: Tuple[float, float] = (1.0, 8.0), p: float = 0.5
     ):
         super().__init__()
         if fill is None:
