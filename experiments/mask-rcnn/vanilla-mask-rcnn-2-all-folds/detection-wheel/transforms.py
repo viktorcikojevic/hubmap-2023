@@ -295,8 +295,8 @@ class ScaleJitter(nn.Module):
 
     def __init__(
         self,
-        target_size: Tuple[int, int] = (512, 512),
-        scale_range: Tuple[float, float] = (0.5, 2),
+        target_size: Tuple[int, int] = (1024, 1024),
+        scale_range: Tuple[float, float] = (0.7, 1.5),
         interpolation: InterpolationMode = InterpolationMode.BILINEAR,
         p: float = 0.5,
     ):
@@ -415,7 +415,7 @@ class FixedSizeCrop(nn.Module):
 class RandomShortestSize(nn.Module):
     def __init__(
         self,
-        min_size: Union[List[int], Tuple[int], int] = 512,
+        min_size: Union[List[int], Tuple[int], int] = 800,
         max_size: int = 768,
         interpolation: InterpolationMode = InterpolationMode.BILINEAR,
     ):
